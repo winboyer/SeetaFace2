@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(Example)
 
-add_subdirectory(points81)
+#add_subdirectory(points81)
 add_subdirectory(search)
-add_subdirectory(tracking)
-add_subdirectory(crop_face)
+#add_subdirectory(tracking)
+#add_subdirectory(crop_face)

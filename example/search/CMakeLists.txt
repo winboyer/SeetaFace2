@@ -15,7 +15,8 @@ endif()
 find_package(OpenCV REQUIRED)
 
 # add library
-add_executable(${PROJECT_NAME} example.cpp)
+# add_executable(${PROJECT_NAME} example.cpp)
+add_executable(${PROJECT_NAME} faceQuaDet.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_SOURCE_DIR}/SeetaNet/include
@@ -23,6 +24,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/FaceLandmarker/include
     ${CMAKE_SOURCE_DIR}/FaceRecognizer/include
     ${CMAKE_SOURCE_DIR}/QualityAssessor/include
+    ${CMAKE_SOURCE_DIR}/QualityAssessor/src
     ${CMAKE_BINARY_DIR}
     )
 target_include_directories(${PROJECT_NAME} PRIVATE
